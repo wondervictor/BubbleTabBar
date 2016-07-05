@@ -1,6 +1,6 @@
 # BubbleTabBar
 
-![]()
+![](https://github.com/wondervictor/BubbleTabBar/blob/master/bubble.gif?raw=true)
 
 #### **An intresting TabBarController!**
 
