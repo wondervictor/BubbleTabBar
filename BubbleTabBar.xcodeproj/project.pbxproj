@@ -14,9 +14,13 @@
 		2EE8A8371D2BD43E00C29D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE8A82D1D2BD43E00C29D7B /* LaunchScreen.storyboard */; };
 		2EE8A8391D2BD43E00C29D7B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EE8A8311D2BD43E00C29D7B /* Info.plist */; };
 		2EE8A83A1D2BD43E00C29D7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8A8321D2BD43E00C29D7B /* main.m */; };
-		2EE8A83B1D2BD43E00C29D7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8A8341D2BD43E00C29D7B /* ViewController.m */; };
 		2EE8A8411D2BD4A900C29D7B /* BubbleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8A83E1D2BD4A900C29D7B /* BubbleButton.m */; };
 		2EE8A8421D2BD4A900C29D7B /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8A8401D2BD4A900C29D7B /* TabBar.m */; };
+		2EE8A8451D2BD98300C29D7B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8A8441D2BD98300C29D7B /* FirstViewController.m */; };
+		2EE8A8481D2BD98A00C29D7B /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8A8471D2BD98A00C29D7B /* FourthViewController.m */; };
+		2EE8A84B1D2BD99300C29D7B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8A84A1D2BD99300C29D7B /* SecondViewController.m */; };
+		2EE8A84E1D2BD9A400C29D7B /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8A84D1D2BD9A400C29D7B /* ThirdViewController.m */; };
+		2EE8A8511D2BD9BA00C29D7B /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8A8501D2BD9BA00C29D7B /* TabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +54,20 @@
 		2EE8A82E1D2BD43E00C29D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EE8A8311D2BD43E00C29D7B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EE8A8321D2BD43E00C29D7B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2EE8A8331D2BD43E00C29D7B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2EE8A8341D2BD43E00C29D7B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2EE8A83D1D2BD4A900C29D7B /* BubbleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleButton.h; sourceTree = "<group>"; };
 		2EE8A83E1D2BD4A900C29D7B /* BubbleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleButton.m; sourceTree = "<group>"; };
 		2EE8A83F1D2BD4A900C29D7B /* TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar.h; sourceTree = "<group>"; };
 		2EE8A8401D2BD4A900C29D7B /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
+		2EE8A8431D2BD98300C29D7B /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		2EE8A8441D2BD98300C29D7B /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		2EE8A8461D2BD98A00C29D7B /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		2EE8A8471D2BD98A00C29D7B /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		2EE8A8491D2BD99300C29D7B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		2EE8A84A1D2BD99300C29D7B /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2EE8A84C1D2BD9A400C29D7B /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		2EE8A84D1D2BD9A400C29D7B /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		2EE8A84F1D2BD9BA00C29D7B /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		2EE8A8501D2BD9BA00C29D7B /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,14 +137,20 @@
 		2EE8A8291D2BD43E00C29D7B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				2EE8A8431D2BD98300C29D7B /* FirstViewController.h */,
+				2EE8A8441D2BD98300C29D7B /* FirstViewController.m */,
+				2EE8A8491D2BD99300C29D7B /* SecondViewController.h */,
+				2EE8A84A1D2BD99300C29D7B /* SecondViewController.m */,
+				2EE8A84C1D2BD9A400C29D7B /* ThirdViewController.h */,
+				2EE8A84D1D2BD9A400C29D7B /* ThirdViewController.m */,
+				2EE8A8461D2BD98A00C29D7B /* FourthViewController.h */,
+				2EE8A8471D2BD98A00C29D7B /* FourthViewController.m */,
 				2EE8A82A1D2BD43E00C29D7B /* AppDelegate.h */,
 				2EE8A82B1D2BD43E00C29D7B /* AppDelegate.m */,
 				2EE8A82C1D2BD43E00C29D7B /* Assets.xcassets */,
 				2EE8A82D1D2BD43E00C29D7B /* LaunchScreen.storyboard */,
 				2EE8A8311D2BD43E00C29D7B /* Info.plist */,
 				2EE8A8321D2BD43E00C29D7B /* main.m */,
-				2EE8A8331D2BD43E00C29D7B /* ViewController.h */,
-				2EE8A8341D2BD43E00C29D7B /* ViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -144,6 +162,8 @@
 				2EE8A83E1D2BD4A900C29D7B /* BubbleButton.m */,
 				2EE8A83F1D2BD4A900C29D7B /* TabBar.h */,
 				2EE8A8401D2BD4A900C29D7B /* TabBar.m */,
+				2EE8A84F1D2BD9BA00C29D7B /* TabBarController.h */,
+				2EE8A8501D2BD9BA00C29D7B /* TabBarController.m */,
 			);
 			path = BubbleTabBar;
 			sourceTree = "<group>";
@@ -281,9 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE8A8481D2BD98A00C29D7B /* FourthViewController.m in Sources */,
 				2EE8A8421D2BD4A900C29D7B /* TabBar.m in Sources */,
-				2EE8A83B1D2BD43E00C29D7B /* ViewController.m in Sources */,
+				2EE8A84E1D2BD9A400C29D7B /* ThirdViewController.m in Sources */,
+				2EE8A8511D2BD9BA00C29D7B /* TabBarController.m in Sources */,
 				2EE8A8411D2BD4A900C29D7B /* BubbleButton.m in Sources */,
+				2EE8A84B1D2BD99300C29D7B /* SecondViewController.m in Sources */,
+				2EE8A8451D2BD98300C29D7B /* FirstViewController.m in Sources */,
 				2EE8A83A1D2BD43E00C29D7B /* main.m in Sources */,
 				2EE8A8351D2BD43E00C29D7B /* AppDelegate.m in Sources */,
 			);

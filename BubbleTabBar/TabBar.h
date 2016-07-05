@@ -18,13 +18,19 @@
 @interface TabBar : UIView
 
 
+
 @property (nonatomic, weak) id<TabBarDelegate> delegate;
 
 @property (nonatomic, strong) NSMutableArray *bubleButtons;
 
 - (instancetype)initWithFrame:(CGRect)frame;
 
-- (instancetype)initWithFrame:(CGRect)frame withImageArrays:(NSArray *)imageNames selectedImages:(NSArray *)selectedImages buttonSize:(CGSize)size buttonCount:(NSInteger)count backColor:(UIColor *)backgroundColor;
+- (instancetype)initWithFrame:(CGRect)frame
+              withImageArrays:(NSArray *)imageNames
+               selectedImages:(NSArray *)selectedImages
+                   buttonSize:(CGSize)size
+                  buttonCount:(NSInteger)count
+                    backColor:(UIColor *)backgroundColor;
 
 
 @end

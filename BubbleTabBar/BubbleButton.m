@@ -54,12 +54,6 @@
     _isSelected = isSelected;
 }
 
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-    
-}
-
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"end");
     if (_isSelected == NO) {
@@ -69,7 +63,6 @@
         _isSelected = YES;
     }
 }
-
 
 
 - (void)selectedAnimation {
@@ -83,14 +76,9 @@
     [self.layer addAnimation:animation forKey:@"scaleAniamtion"];
 }
 
-- (void)unselectedAnimation {
-    
-}
-
 - (void)resetButton {
     _isSelected = NO;
     [self setBackgroundImage:_normalImage forState:UIControlStateNormal];
-    [self unselectedAnimation];
 }
 
 - (void)setHighlight {
@@ -98,31 +86,5 @@
     _isSelected = YES;
 }
 
-
-
-
-/*
-- (void)buttonClicked {
-    if (self.selected) {
-        _trigerBlock(self);
-        [self setBackgroundImage:_selectedImage forState:UIControlStateSelected];
-    }
-    else {
-        [self setBackgroundImage:_normalImage forState:UIControlStateNormal];
-    }
-}
-
- */
-
-
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end
