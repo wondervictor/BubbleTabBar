@@ -8,11 +8,6 @@
 
 #import "TabBarController.h"
 #import "TabBar.h"
-#import "SecondViewController.h"
-#import "ThirdViewController.h"
-#import "FirstViewController.h"
-#import "FourthViewController.h"
-
 
 @interface TabBarController ()<TabBarDelegate>
 
@@ -54,9 +49,7 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didSelectedAtIndex:(NSInteger)index {
-    NSLog(@"%lu",self.viewControllers.count);
-    
+- (void)didSelectedAtIndex:(NSInteger)index {    
     UIViewController *currentController = (UIViewController *)[self.viewControllers objectAtIndex:index];
     self.selectedViewController = currentController;
 }

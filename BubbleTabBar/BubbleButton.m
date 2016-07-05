@@ -54,8 +54,13 @@
     _isSelected = isSelected;
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    
+}
+
+
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"end");
     if (_isSelected == NO) {
         [self setBackgroundImage:_selectedImage forState:UIControlStateNormal];
         [self selectedAnimation];
