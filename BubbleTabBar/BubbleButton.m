@@ -55,13 +55,6 @@
 }
 
 
-
-- (void)configureViews {
-    
-}
-
-
-
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
     
@@ -75,30 +68,14 @@
         _trigerBlock(self);
         _isSelected = YES;
     }
-    /*
-    else {
-        NSLog(@"yes");
-
-    }
-    */
 }
 
 
 
 - (void)selectedAnimation {
-    /*
-    [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        self.transform = CGAffineTransformMakeScale(1.25, 1.25);
-    } completion:^(BOOL finished) {
-        
-    }];
-     
-     */
-    
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
     animation.keyTimes = @[@0.1,@0.4];
     animation.values =  @[@1.2,@1];
-    //@[[NSValue valueWithCGAffineTransform:CGAffineTransformMakeScale(1.4, 1.4)],[NSValue valueWithCGAffineTransform:CGAffineTransformMakeScale(1.25, 1.25)]];
     animation.duration = 0.7;
     animation.fillMode = kCAFillModeForwards;
     animation.removedOnCompletion = NO;

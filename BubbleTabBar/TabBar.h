@@ -24,7 +24,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame;
 
-- (instancetype)initWithFrame:(CGRect)frame withImageArrays:(NSArray *)imageNames selectedImages:(NSArray *)selectedImages;
+- (instancetype)initWithFrame:(CGRect)frame withImageArrays:(NSArray *)imageNames selectedImages:(NSArray *)selectedImages buttonSize:(CGSize)size buttonCount:(NSInteger)count backColor:(UIColor *)backgroundColor;
 
 
 @end

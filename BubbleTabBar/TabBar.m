@@ -9,8 +9,15 @@
 #import "TabBar.h"
 
 @interface TabBar()
+{
+    CGSize buttonSize;
+    NSInteger buttonCount;
+    
+}
+
 
 @property (nonatomic, assign) NSInteger currentSelectedIndex;
+
 
 
 @end
@@ -38,11 +45,13 @@
     return self;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame withImageArrays:(NSArray *)imageNames selectedImages:(NSArray *)selectedImages {
+- (instancetype)initWithFrame:(CGRect)frame withImageArrays:(NSArray *)imageNames selectedImages:(NSArray *)selectedImages buttonSize:(CGSize)size buttonCount:(NSInteger)count backColor:(UIColor *)backgroundColor {
     if (self = [super initWithFrame:frame]) {
         [self configureBubbleButtonsWithArray:imageNames selectedImage:selectedImages];
-        self.backgroundColor = [UIColor lightGrayColor];
-        self.layer.cornerRadius = 25;
+        self.backgroundColor = backgroundColor;
+        self.layer.cornerRadius = self.frame.size.height/2.0;
+        buttonSize = size;
+        buttonCount = count;
         self.currentSelectedIndex = 0;
     }
     return self;
@@ -50,13 +59,16 @@
 
 - (void)configureBubbleButtonsWithArray:(NSArray *)images selectedImage:(NSArray *)selectedImages {
     _bubleButtons = [NSMutableArray new];
-    CGSize size = CGSizeMake(50, 50);
-    
+    CGSize size = buttonSize;
     id __weak weakSelf = self;
+    CGFloat width = self.frame.size.width;
+    CGFloat space = (width - size.width * buttonCount)/(buttonCount - 1);
+    CGFloat radius = size.width/2.0;
     
-    for(int i = 0; i < 4; i ++) {
     
-        BubbleButton *button = [[BubbleButton alloc]initWithSize:size center:CGPointMake(25 + i * 80, 25) selectedImage:[UIImage imageNamed:selectedImages[i]] mormalImage:[UIImage imageNamed:images[i]] trigerBlock:^(UIButton *sender) {
+    for(int i = 0; i < buttonCount; i ++) {
+    
+        BubbleButton *button = [[BubbleButton alloc]initWithSize:size center:CGPointMake(radius + i * space, radius) selectedImage:[UIImage imageNamed:selectedImages[i]] mormalImage:[UIImage imageNamed:images[i]] trigerBlock:^(UIButton *sender) {
             
             [weakSelf didSelectedIndex:i];
             
@@ -71,7 +83,6 @@
 }
 
 - (void)didSelectedIndex:(NSInteger)index {
-    NSLog(@"%lu",index);
     BubbleButton *previousButton = (BubbleButton *)[self.bubleButtons objectAtIndex:_currentSelectedIndex];
     [previousButton resetButton];
     _currentSelectedIndex = index;
