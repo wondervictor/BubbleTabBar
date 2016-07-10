@@ -49,7 +49,7 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didSelectedAtIndex:(NSInteger)index {    
+- (void)didSelectedAtIndex:(NSInteger)index {
     UIViewController *currentController = (UIViewController *)[self.viewControllers objectAtIndex:index];
     self.selectedViewController = currentController;
 }
